@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <span id="titlespace"><title>{% block title %} {% endblock %} - ShitAdviser</title><span>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+    <nav>
+        <button class="navitem" onclick="window.location.replace({{url_for('main.index')}});">Home</button>
+        <button class="navitem" href="#">Maps</button>
+        <button class="navitem" href="#">Account</button>
+    </nav>
+    <div class="break">
+
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>
